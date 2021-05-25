@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    position: absolute;
+    width: 105px;
+    top: 2%;
+    left: 3%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./gym.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    transition: 0.5s ;
+}
+nav ul li a:hover{
+    color: tomato;
+}
+.menu{
+    display: none;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 22%;
+}
+.container h1{
+    color: white;
+    font-weight: 500;
+    font-size: 70px;
+}
+.container p{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 35px;
+}
+.container a{
+    text-decoration: none;
+    color: #b2f5a6;
+}
+.btn {
+    margin: 30px 0px;
+    padding: 8px 30px;
+    background: #181d18;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn:hover{
+    color: rgb(247, 1, 1);
+    background: rgb(27, 27, 61);
+}
+.services{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.services h2{
+    font-size: 50px;
+    text-align: center;
+}
+.services .row {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color:#333;
+}
+.services .row .col-1{
+    flex-basis: 48%;
+    padding: 5px 10px;
+    background-image: url(./workout1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 2px 2px;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+.services .row .col-2{
+    flex-basis: 48%;
+    margin: 2px 2px;
+    padding: 5px 7px;
+}
+.services a{
+    text-decoration: none;
+    color: #b2f5a6;
+}
+.trainers{
+    width: 100%;
+    padding: 10px 0;
+    background: #b2f5a6;
+}
+.trainers h1{
+    font-size: 50px;
+    text-align: center;
+}
+.trainers .trainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.trainers .trainer .single-trainer{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    flex-direction: column;
+    padding: 5px 5px;
+    justify-content: space-around;
+}
+
+.trainers .trainer .single-trainer img{
+    width: 45%;
+    border-radius: 10px;
+}
+
+.book-us{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.book-us h2{
+    text-align: center;
+}
+.comment-form input, textarea{
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 27%;
+    border: none;
+    outline: none;
+    background:rgb(79, 150, 38);
+}
+.book-us p{
+    margin-left: 28%;
+}
+
+.footer{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    background: chartreuse;
+}
+.footer .col1 {
+    margin-left: 5px;
+    flex-basis: 48%;
+    flex-direction: column;
+}
+.footer .col2{
+    align-content: center;
+}
+/*Media query for menu*/
+@media only screen and (max-width:800px){
+    .container h1{
+        font-size: 40px;
+    }
+    .container p{
+        font-size: 15px;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #333;
+        width: 79%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+}
